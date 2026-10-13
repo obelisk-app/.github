@@ -12,22 +12,22 @@
 <table align="center">
   <tr>
     <td align="center" width="25%">
-      <a href="https://github.com/obelisk-app/obelisk"><img src="assets/obelisk-app.svg" width="96" alt="Obelisk logo" /></a><br/>
+      <a href="https://github.com/obelisk-app/obelisk"><img src="assets/obelisk-app.svg" width="124" alt="Obelisk logo" /></a><br/>
       <a href="https://github.com/obelisk-app/obelisk"><b>Obelisk</b></a><br/>
       <sub>Nostr-native chat and voice client</sub>
     </td>
     <td align="center" width="25%">
-      <a href="https://github.com/obelisk-app/obelisk-relay"><img src="assets/obelisk-relay.svg" width="96" alt="Obelisk Relay logo" /></a><br/>
+      <a href="https://github.com/obelisk-app/obelisk-relay"><img src="assets/obelisk-relay.svg" width="124" alt="Obelisk Relay logo" /></a><br/>
       <a href="https://github.com/obelisk-app/obelisk-relay"><b>Obelisk Relay</b></a><br/>
       <sub>NIP-29 groups relay (Rust)</sub>
     </td>
     <td align="center" width="25%">
-      <a href="https://github.com/obelisk-app/obelisk-sfu"><img src="assets/obelisk-sfu.svg" width="96" alt="Obelisk SFU logo" /></a><br/>
+      <a href="https://github.com/obelisk-app/obelisk-sfu"><img src="assets/obelisk-sfu.svg" width="124" alt="Obelisk SFU logo" /></a><br/>
       <a href="https://github.com/obelisk-app/obelisk-sfu"><b>Obelisk SFU</b></a><br/>
       <sub>mediasoup voice SFU with Nostr-RPC signaling</sub>
     </td>
     <td align="center" width="25%">
-      <a href="https://github.com/obelisk-app/obelisk-agents"><img src="assets/obelisk-agents.svg" width="96" alt="Obelisk Agents logo" /></a><br/>
+      <a href="https://github.com/obelisk-app/obelisk-agents"><img src="assets/obelisk-agents.svg" width="124" alt="Obelisk Agents logo" /></a><br/>
       <a href="https://github.com/obelisk-app/obelisk-agents"><b>Obelisk Agents</b></a><br/>
       <sub>Nostr bots and an agent-friendly CLI</sub>
     </td>

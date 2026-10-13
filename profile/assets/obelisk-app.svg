@@ -1,11 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#c5ff6e"/>
-      <stop offset="1" stop-color="#5a8f1f"/>
-    </linearGradient>
-  </defs>
-  <rect width="64" height="64" rx="15" fill="url(#g)"/>
-  <path d="M32 9.5 27.6 15 25.2 53.5H31.6V15Z" fill="none" stroke="#0a0a0a" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M32 9.5 36.4 15 38.8 53.5H31.6V15Z" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="2.5" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="150" viewBox="0 0 140 150">
+<defs><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c5ff6e"/><stop offset="1" stop-color="#5a8f1f"/></linearGradient></defs>
+<style>
+  .float{animation:float 5s ease-in-out infinite}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+  .sweep{animation:sw 5s ease-in-out infinite}
+  @keyframes sw{0%,55%{transform:rotate(20deg) translateX(0)}85%,100%{transform:rotate(20deg) translateX(190px)}}
+  .tw{opacity:0;animation:tw 5s ease-in-out infinite}
+  .tw path{transform-box:fill-box;transform-origin:center;animation:spin 5s ease-in-out infinite}
+  @keyframes tw{0%,68%{opacity:0}76%{opacity:1}88%,100%{opacity:0}}
+  @keyframes spin{0%,66%{transform:scale(.2) rotate(0)}76%{transform:scale(1) rotate(45deg)}90%,100%{transform:scale(.2) rotate(90deg)}}
+  @media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<g transform="translate(16 20)"><g class="float" style="animation-delay:0s">
+  <clipPath id="tc"><rect width="108" height="108" rx="24"/></clipPath>
+  <rect x="4" y="12" width="100" height="104" rx="24" fill="#000" opacity="0.45" filter="url(#shadow)"/>
+  <g clip-path="url(#tc)">
+    <rect width="108" height="108" fill="url(#g)"/>
+    <defs><linearGradient id="sh" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+    <g transform="scale(1.6875)">
+      <path d="M32 9.5 27.6 15 25.2 53.5H31.6V15Z" fill="none" stroke="#0a0a0a" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M32 9.5 36.4 15 38.8 53.5H31.6V15Z" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="2.5" stroke-linejoin="round"/>
+    </g>
+    <rect class="sweep" x="-60" y="-30" width="34" height="170" fill="url(#sh)"/>
+    <g class="tw" transform="translate(54 16)"><path d="M0,-7 L1.4,-1.4 L7,0 L1.4,1.4 L0,7 L-1.4,1.4 L-7,0 L-1.4,-1.4 Z" fill="#fff"/></g>
+  </g>
+  <rect x="0.75" y="0.75" width="106.5" height="106.5" rx="23.3" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+</g></g>
 </svg>
